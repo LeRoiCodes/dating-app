@@ -8,7 +8,16 @@ import ForumIcon from '@material-ui/icons/Forum'
 
 function Header() {
   return (
-    <div className='header'></div>
+    <div className='header'>
+    {/* update logo */}
+      <IconButton>
+        <PersonIcon fontSize="large" className="header_icon" />
+      </IconButton>
+      <img className="header_logo" src="logo192.png" alt="header" />
+      <IconButton>
+        <ForumIcon fontSize="large" className="header_icon" />
+      </IconButton>
+    </div>
   )
 }
 
